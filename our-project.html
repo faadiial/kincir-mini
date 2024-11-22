@@ -2,107 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=5.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Project - Kincir Mini</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-100 font-sans">
+<body class="bg-gray-100 font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <div class="text-lg font-bold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
+      <div class="text-2xl font-extrabold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
       <ul class="flex space-x-6">
-        <li><a href="our-project.html" class="text-blue-500 hover:text-blue-700">Our Project</a></li>
-        <li><a href="pengeluaran.html" class="text-blue-500 hover:text-blue-700">Pengeluaran</a></li>
-        <li><a href="about-us.html" class="text-blue-500 hover:text-blue-700">About Us</a></li>
+        <li><a href="our-project.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Our Project</a></li>
+        <li><a href="pengeluaran.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Pengeluaran</a></li>
+        <li><a href="about-us.html" class="text-gray-700 hover:text-blue-500 transition font-medium">About Us</a></li>
       </ul>
     </div>
   </nav>
+ <!-- Pengeluaran Section -->
+ <section class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-32">
+  <div class="container mx-auto text-center px-6 md:px-20">
+    <h2 class="text-5xl font-extrabold mb-8 leading-tight">
+      Hasil Kerja Kami untuk Energi Terbarukan
+    </h2>
+    <p class="text-lg md:text-xl mb-10 font-light">
+      Proyek KincirMini bertujuan untuk mengembangkan teknologi energi terbarukan melalui kincir angin mini yang ramah lingkungan.
+    </p>
+  </div>
+</section>
 
-  <!-- Our Project Section -->
-  <section class="bg-blue-200 py-20">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold text-blue-800 mb-4">"Hasil Kerja Kami untuk Energi Terbarukan"</h1>
-      <p class="text-lg text-blue-700 mb-10">
-        Proyek KincirMini bertujuan untuk mengembangkan teknologi energi terbarukan melalui kincir angin mini yang ramah lingkungan.
-      </p>
-    </div>
-  </section>
-
-  <!-- Video Section -->
-  <section id="video-project" class="bg-white py-20">
+  <!-- Video Section with Modernized Design -->
+  <section id="video-project" class="bg-gradient-to-r from-blue-100 to-blue-200 py-20">
     <div class="container mx-auto px-6 md:px-20">
-      <h2 class="text-3xl font-bold text-blue-800 text-center mb-6">Proses dan Pengujian</h2>
-      <div class="w-full h-auto mb-6">
-        <iframe class="w-full h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/ma_ChIhR5Lg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h2 class="text-4xl font-extrabold text-blue-800 text-center mb-10 transform hover:scale-105 transition-all duration-500 ease-in-out">Proses dan Pengujian</h2>
+      <div class="relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <iframe class="w-full h-96 transform transition-all duration-500 ease-in-out" src="https://www.youtube.com/embed/ma_ChIhR5Lg" frameborder="0" allowfullscreen></iframe>
       </div>
-      <p class="text-gray-700 leading-relaxed text-center">
+      <p class="text-gray-700 leading-relaxed text-center mt-6 text-lg font-medium transform transition-all duration-300 ease-in-out hover:text-blue-600">
         Video ini menunjukkan langkah-langkah pembuatan dan pengujian kincir angin mini untuk solusi energi terbarukan.
       </p>
     </div>
   </section>
 
-  <!-- Photo Gallery -->
-<!-- Photo Gallery -->
-<section id="photo-gallery" class="bg-blue-50 py-20">
-  <div class="container mx-auto px-6 md:px-20">
-    <h2 class="text-3xl font-bold text-blue-800 text-center mb-6">Galeri Foto</h2>
-    
-    <!-- Alat Section -->
-    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Alat</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 1" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 2" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 3" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 4" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 5" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 6" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Alat 7" class="w-full h-auto rounded-lg shadow-lg"></div>
+  <!-- Photo Gallery with Gradient -->
+  <section id="photo-gallery" class="bg-gradient-to-r from-blue-50 to-blue-100 py-20">
+    <div class="container mx-auto px-6 md:px-20">
+      <h2 class="text-4xl font-bold text-blue-800 text-center mb-10">Galeri Foto</h2>
+
+      <!-- Alat Section -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-left ml-4">Alat</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Alat 1" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Alat 2" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Alat 3" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bahan Section -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-left ml-4">Bahan</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Bahan 1" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Bahan 2" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Bahan 3" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+        </div>
+      </div>
+
+      <!-- Langkah-Langkah Section -->
+      <div>
+        <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-left ml-4">Langkah-Langkah</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Langkah 1" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Langkah 2" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+          <div class="transform transition-all duration-500 hover:scale-105 hover:shadow-xl rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Langkah 3" class="w-full h-full object-cover transition-transform duration-500 ease-in-out">
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Bahan Section -->
-    <h3 class="text-2xl font-semibold text-blue-700 mt-10 mb-4">Bahan</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 1" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 2" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 3" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 4" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 5" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 6" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 7" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Bahan 8" class="w-full h-auto rounded-lg shadow-lg"></div>
-    </div>
-
-    <!-- Langkah-Langkah Section -->
-    <h3 class="text-2xl font-semibold text-blue-700 mt-10 mb-4">Langkah-Langkah</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <!-- Tambahkan 18 foto -->
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 1" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 2" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 3" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 4" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 5" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 6" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 7" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 8" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 9" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 10" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 11" class="w-full h-auto rounded-lg shadow-lg"></div>
-      <div><img src="https://via.placeholder.com/300x200" alt="Langkah 12" class="w-full h-auto rounded-lg shadow-lg"></div>
-    
-
-    </div>
-  </div>
-</section>
-
-
-
+  </section>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6">
     <div class="container mx-auto text-center">
-      <p>&copy; 2024 Kincir Mini. All rights reserved.</p>
+      <p class="text-sm">&copy; 2024 Kincir Mini. All rights reserved.</p>
     </div>
   </footer>
 
