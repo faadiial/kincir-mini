@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,72 +6,87 @@
   <title>Home - Kincir Mini</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-100 font-sans">
+<body class="bg-blue-50 font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <!-- Logo as Button -->
-      <div class="text-lg font-bold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
-      
-      <!-- Navigation Links -->
+      <div class="text-2xl font-extrabold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
       <ul class="flex space-x-6">
-        <li><a href="our-project.html" class="text-blue-500 hover:text-blue-700">Our Project</a></li>
-        <li><a href="pengeluaran.html" class="text-blue-500 hover:text-blue-700">Pengeluaran</a></li>
-        <li><a href="about-us.html" class="text-blue-500 hover:text-blue-700">About Us</a></li>
-
-        </a></li>
+        <li><a href="our-project.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Our Project</a></li>
+        <li><a href="pengeluaran.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Pengeluaran</a></li>
+        <li><a href="about-us.html" class="text-gray-700 hover:text-blue-500 transition font-medium">About Us</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-blue-200 py-20">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold text-blue-800 mb-4">"Dari putaran kecil tercipta energi besar."</h1>
-      <p class="text-lg text-blue-700 mb-10">Inovasi dimulai dari langkah sederhana - fadi ganteng 2k24</p>
-      <a href="#about-project" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Pelajari Lebih Lanjut</a>
+   <section class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 relative overflow-hidden h-screen">
+    <div 
+      class="absolute inset-0 bg-cover bg-center" 
+      style="background-image: url('https://source.unsplash.com/1920x1080/?nature,water');">
+    </div>
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+    <div class="relative container mx-auto h-full flex flex-col items-center justify-center text-white text-center px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+        "Dari putaran kecil tercipta energi besar."
+      </h1>
+      <p class="text-xl md:text-2xl mb-8">
+        Inovasi dimulai dari langkah sederhana - fadi ganteng 2k24
+      </p>
+      <a href="detail-proyek.html" class="bg-yellow-500 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-gray-600 transition">
+        Jangan Buka
+      </a>
     </div>
   </section>
 
-  <!-- Perkenalkan Proyek Section -->
-  <section id="about-project" class="bg-white py-20">
-    <div class="container mx-auto px-6 md:px-20">
-      <h2 class="text-3xl font-bold text-blue-800 text-center mb-6">Perkenalkan Proyek IPAS Kami</h2>
-      <div class="text-center text-gray-700">
-        <p class="text-lg leading-relaxed mb-6">
-          KincirMini adalah proyek sederhana yang bertujuan untuk mengubah energi kinetik air menjadi energi mekanik,
-          dirancang khusus untuk tugas IPAS. Dengan skala mini, proyek ini mendemonstrasikan prinsip kerja kincir air 
-          dalam menghasilkan energi terbarukan yang ramah lingkungan.
-        </p>
-        <p class="text-lg leading-relaxed">
-          Proyek ini dibuat oleh kelompok <span class="font-bold text-blue-800">El Presentasi</span>, 
-          dengan semangat untuk menunjukkan bahwa inovasi besar dapat dimulai dari langkah kecil.
-        </p>
+  <!-- Statistics Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4">
+        <h3 class="text-4xl font-bold text-blue-600">870+</h3>
+        <p class="text-gray-600">Proyek Selesai</p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-4xl font-bold text-blue-600">20,000+</h3>
+        <p class="text-gray-600">Jam Penelitian</p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-4xl font-bold text-blue-600">298+</h3>
+        <p class="text-gray-600">Kontribusi Ide</p>
+      </div>
+      <div class="p-4">
+        <h3 class="text-4xl font-bold text-blue-600">72,920</h3>
+        <p class="text-gray-600">Pengguna Terlibat</p>
       </div>
     </div>
   </section>
 
-  <!-- Dasar Teori Section -->
-  <section id="dasar-teori" class="bg-blue-50 py-20">
-    <div class="container mx-auto px-6 md:px-20">
-      <h2 class="text-3xl font-bold text-blue-800 text-center mb-6">Dasar Teori</h2>
-      <div class="bg-white shadow-lg rounded-lg p-6 md:p-10">
-        <p class="text-lg leading-relaxed text-gray-700">
-          Kincir air adalah perangkat yang bekerja dengan mengubah energi air menjadi energi mekanik melalui gerakan baling-baling.
-          Sistem ini tidak memerlukan mesin tambahan, melainkan memanfaatkan aliran air alami yang mendorong baling-baling pada kincir.
-          Tekanan dari aliran air, meskipun hanya berasal dari tekanan atmosfer, cukup untuk memberikan gaya yang dibutuhkan agar kincir
-          dapat berputar. Hal ini menjadikan kincir air solusi sederhana namun efektif untuk mengaplikasikan energi terbarukan secara
-          ramah lingkungan, terutama di daerah yang memiliki aliran air.
-        </p>
+  <!-- Benefits Section -->
+  <section class="bg-blue-100 py-20">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-10">Manfaat Kincir Mini</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Mendukung Energi Terbarukan</h3>
+          <p class="text-gray-600">Kincir Mini memanfaatkan air untuk menghasilkan energi ramah lingkungan.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Skala Kecil, Efisiensi Besar</h3>
+          <p class="text-gray-600">Cocok untuk daerah terpencil dengan kebutuhan energi kecil.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Mudah Dimengerti</h3>
+          <p class="text-gray-600">Proyek sederhana ini dapat dipelajari oleh semua kalangan, termasuk pelajar.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6">
+  <footer class="bg-blue-900 text-white py-8">
     <div class="container mx-auto text-center">
-      <p>&copy; 2024 Kincir Mini. All rights reserved.</p>
+      <p class="text-sm">&copy; 2024 Kincir Mini. All rights reserved.</p>
     </div>
   </footer>
 
