@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Kincir Mini</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Menambahkan efek gradien pada teks */
+    .gradient-text {
+      background: linear-gradient(to right, #00B4D8, #0077B6);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+
+    /* Efek fade-in untuk teks */
+    .fade-in {
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Efek zoom pada gambar saat hover */
+    .img-hover-zoom {
+      transition: transform 0.3s ease-in-out; /* Transisi halus */
+    }
+
+    .img-hover-zoom:hover {
+      transform: scale(1.1); /* Zoom sedikit */
+    }
+  </style>
+</head>
+<body class="bg-blue-50 font-sans">
+
+ <!-- Navbar -->
+ <nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-2xl font-extrabold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
+    <ul class="flex space-x-6">
+      <li><a href="our-project.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Our Project</a></li>
+      <li><a href="reports.html" class="text-gray-700 hover:text-blue-500 transition font-medium text-blue-600 font-semibold">Reports</a></li>
+      <li><a href="about-us.html" class="text-gray-700 hover:text-blue-500 transition font-medium">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- About Us Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-48">
+    <div class="container mx-auto text-center px-6 md:px-20">
+      <h2 class="text-5xl font-extrabold mb-8 leading-tight">
+        About Us
+      </h2>
+      <p class="text-lg md:text-xl mb-10 font-light">
+        Kami adalah kelompok siswa kelas 10 RPL 1 di SMK Telkom Malang yang berfokus pada inovasi energi terbarukan.
+        Melalui proyek KincirMini, kami berharap dapat memberikan kontribusi nyata terhadap energi ramah lingkungan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Foto Guru dan Anggota Tim dengan Gradient Warna Biru -->
+  <section class="bg-gradient-to-r from-blue-800 to-blue-900 py-20">
+    <div class="container mx-auto text-center">
+
+      <!-- Teks "EL PRESENTATION" -->
+      <h3 class="text-4xl font-extrabold text-white mb-10">
+        EL PRESENTATION
+      </h3>
+
+      <!-- Guru Pembimbing -->
+      <div class="mb-12">
+        <div class="w-48 h-48 rounded-full shadow-xl border-4 border-blue-500 bg-cover bg-center mx-auto img-hover-zoom" 
+          style="background-image: url('images/guru.jpg');">
+        </div>
+        <h3 class="mt-4 text-xl font-semibold text-blue-100">Bapak Diaur Rachman</h3>
+        <p class="text-gray-300">Our Teacher</p>
+      </div>
+
+      <!-- Tim Proyek -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
+        <!-- Anggota Tim 1 -->
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
+            style="background-image: url('images/rosyid.jpg');">
+          </div>
+          <h4 class="mt-4 text-lg font-medium text-blue-100">Abdurrosyid Imantaqqamil</h4>
+          <p class="text-sm text-gray-200">Project Engineer</p>
+        </div>
+        <!-- Anggota Tim 2 -->
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom"
+            style="background-image: url('images/bagas.jpg');">
+          </div>
+          <h4 class="mt-4 text-lg font-medium text-blue-100">Bagas Mahendra</h4>
+          <p class="text-sm text-gray-200">Leader</p>
+        </div>
+        <!-- Anggota Tim 3 -->
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
+            style="background-image: url('images/hisyam.jpg');">
+          </div>
+          <h4 class="mt-4 text-lg font-medium text-blue-100">Abdullah Hisyam A.</h4>
+          <p class="text-sm text-gray-200">Project Engineer II</p>
+        </div>
+      </div>
+
+      <!-- Anggota Tim Row 2 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10">
+        <!-- Anggota Tim 4 -->
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
+            style="background-image: url('images/nisa.jpg');">
+          </div>
+          <h4 class="mt-4 text-lg font-medium text-blue-100">Khoirunnisa' Azzahro</h4>
+          <p class="text-sm text-gray-200">Posisi</p>
+        </div>
+        <!-- Anggota Tim 5 -->
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
+            style="background-image: url('images/fadi.jpg');">
+          </div>
+          <h4 class="mt-4 text-lg font-medium text-blue-100">Fadi Alyuliansyah</h4>
+          <p class="text-sm text-gray-200">Web Developer</p>
+        </div>
+        <!-- Anggota Tim 6 -->
+        <div class="flex flex-col items-center">
+          <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
+            style="background-image: url('images/mouza.jpg');">
+          </div>
+          <h4 class="mt-4 text-lg font-medium text-blue-100">Abravia Mouzahra R.</h4>
+          <p class="text-sm text-gray-200">Web Developer II</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 mt-0">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Kincir Mini. By Fadi mimisan</p>
+    </div>
+  </footer>
+
+</body>
+</html>

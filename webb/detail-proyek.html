@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Proyek - Kincir Mini</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hover Zoom effect */
+    .img-hover-zoom {
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    .img-hover-zoom:hover {
+      transform: scale(1.1); /* Slight zoom effect */
+    }
+
+    /* Card hover effect */
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-extrabold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
+      <ul class="flex space-x-6">
+        <li><a href="our-project.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Our Project</a></li>
+        <li><a href="reports.html" class="text-gray-700 hover:text-blue-500 transition font-medium text-blue-600 font-semibold">Reports</a></li>
+        <li><a href="about-us.html" class="text-gray-700 hover:text-blue-500 transition font-medium">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-32">
+    <div class="container mx-auto px-6 lg:flex lg:items-center lg:justify-between lg:space-x-8 py-20">
+      <!-- Left Text Content -->
+      <div class="text-center lg:text-left">
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+          Hiyak! hai bertemu dengan saya disini  :3
+        </h1>
+        <p class="text-lg text-white-700">
+          "Inovasi dimulai dari langkah sederhana. Mari eksplorasi proyek IPAS kami yang sederhana namun penuh makna." anjay skibidi toilet brum brum
+        </p>
+      </div>
+  
+      <!-- Right Illustration -->
+      <div class="mt-6 lg:mt-0">
+        <img src="material/ii.png" alt="Kincir Mini" class="w-full img-hover-zoom">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Tentang Proyek Kami</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-12">
+        KincirMini adalah proyek sederhana yang dirancang untuk mendemonstrasikan prinsip kerja kincir air dalam menghasilkan energi 
+        terbarukan. Dirancang oleh kelompok <span class="font-bold text-blue-800">El Presentasi</span>, proyek ini mencerminkan bahwa
+        langkah kecil dapat membawa dampak besar bagi lingkungan kita.
+      </p>
+
+      <!-- Cards Section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-blue-50 shadow-lg rounded-lg p-6 hover:shadow-xl transition card">
+          <img src="material/1.png" alt="Water" class="w-65 h-60 mx-auto mb-4 rounded-lg img-hover-zoom">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Energi Terbarukan</h3>
+          <p class="text-gray-700">
+            Proyek ini bertujuan untuk memanfaatkan energi kinetik air menjadi energi mekanik yang ramah lingkungan.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-blue-50 shadow-lg rounded-lg p-6 hover:shadow-xl transition card">
+          <img src="material/2.png" alt="Teamwork" class="w-60 h-60 mx-auto mb-4 rounded-lg img-hover-zoom">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Kerjasama Tim</h3>
+          <p class="text-gray-700">
+            Dibuat oleh kelompok <span class="font-bold">El Presentasi</span> dengan semangat kolaborasi dan inovasi.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-blue-50 shadow-lg rounded-lg p-6 hover:shadow-xl transition card">
+          <img src="material/3.png" alt="Innovation" class="w-60 h-60 mx-auto mb-4 rounded-lg img-hover-zoom">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Inovasi Sederhana</h3>
+          <p class="text-gray-700">
+            Dengan pendekatan sederhana, kami menunjukkan cara mengaplikasikan ilmu IPAS ke kehidupan nyata.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dasar Teori Section -->
+  <section class="bg-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Dasar Teori</h2>
+      
+      <!-- Timeline Design -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center space-y-4">
+          <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl">1</div>
+          <div class="text-left">
+            <h3 class="font-semibold text-blue-800">Kincir Air</h3>
+            <p class="text-gray-700">
+              Kincir air adalah perangkat yang bekerja dengan mengubah energi kinetik air menjadi energi mekanik melalui gerakan baling-baling. 
+              <br><br>
+              <a href="https://jurnal.polines.ac.id/index.php/rekayasa/article/download/3088/107728" 
+                 class="text-blue-600 hover:text-yellow-500 hover:underline hover:italic">Sumber 1</a>
+            </p>
+          </div>
+        </div>
+  
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center space-y-4">
+          <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl">2</div>
+          <div class="text-left">
+            <h3 class="font-semibold text-blue-800">Energi Terbarukan</h3>
+            <p class="text-gray-700">
+              Energi yang dihasilkan dari aliran air ini sangat ramah lingkungan dan dapat dipakai untuk kebutuhan jangka panjang. 
+              <br><br>
+              <a href="https://eprints.uai.ac.id/1694/1/ILS0144-21_Laporan-Penelitian.pdf" 
+                 class="text-blue-600 hover:text-yellow-500 hover:underline hover:italic">Sumber 2</a>
+            </p>
+          </div>
+        </div>
+  
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center space-y-4">
+          <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl">3</div>
+          <div class="text-left">
+            <h3 class="font-semibold text-blue-800">Desain Sederhana</h3>
+            <p class="text-gray-700">
+              Desain sederhana kincir air memungkinkan aplikasi di banyak daerah tanpa memerlukan teknologi canggih. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 mt-20">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Kincir Mini. By Fadi mimisan</p>
+    </div>
+  </footer>
+
+</body>
+</html>
