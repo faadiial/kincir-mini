@@ -14,6 +14,24 @@
       font-weight: 700;
     }
 
+    /* Efek zoom pada gambar saat hover */
+    .img-hover-zoom {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-hover-zoom:hover {
+      transform: scale(1.1); /* Zoom lebih besar saat hover */
+    }
+
+    /* Desain modern dan responsif */
+    .team-member {
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px); /* Efek sedikit naik saat hover */
+    }
+
     /* Efek fade-in untuk teks */
     .fade-in {
       animation: fadeIn 2s ease-out;
@@ -27,30 +45,21 @@
         opacity: 1;
       }
     }
-
-    /* Efek zoom pada gambar saat hover */
-    .img-hover-zoom {
-      transition: transform 0.3s ease-in-out; /* Transisi halus */
-    }
-
-    .img-hover-zoom:hover {
-      transform: scale(1.1); /* Zoom sedikit */
-    }
   </style>
 </head>
 <body class="bg-blue-50 font-sans">
 
- <!-- Navbar -->
- <nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto flex justify-between items-center py-4 px-6">
-    <div class="text-2xl font-extrabold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
-    <ul class="flex space-x-6">
-      <li><a href="our-project.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Our Project</a></li>
-      <li><a href="reports.html" class="text-gray-700 hover:text-blue-500 transition font-medium text-blue-600 font-semibold">Reports</a></li>
-      <li><a href="about-us.html" class="text-gray-700 hover:text-blue-500 transition font-medium">About Us</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-extrabold text-blue-600 cursor-pointer" onclick="window.location.href='index.html'">kincirMini</div>
+      <ul class="flex space-x-6">
+        <li><a href="our-project.html" class="text-gray-700 hover:text-blue-500 transition font-medium">Our Project</a></li>
+        <li><a href="reports.html" class="text-gray-700 hover:text-blue-500 transition font-medium text-blue-600 font-semibold">Reports</a></li>
+        <li><a href="about-us.html" class="text-gray-700 hover:text-blue-500 transition font-medium">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- About Us Section -->
   <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-48">
@@ -69,10 +78,16 @@
   <section class="bg-gradient-to-r from-blue-800 to-blue-900 py-20">
     <div class="container mx-auto text-center">
 
-      <!-- Teks "EL PRESENTATION" -->
-      <h3 class="text-4xl font-extrabold text-white mb-10">
-        EL PRESENTATION
-      </h3>
+      <!-- Logo Tim "EL PRESENTATION" -->
+      <div class="mb-16">
+        <img src="material/logo.png" alt="EL PRESENTATION Logo" class="mx-auto w-40 h-41 mb-4">
+        <h3 class="text-4xl font-extrabold text-white mb-4">
+          EL PRESENTATION
+        </h3>
+        <p class="text-lg text-gray-200 font-light">
+          Kami adalah tim kreatif yang berfokus pada inovasi dan pengembangan teknologi ramah lingkungan. Melalui proyek KincirMini, kami berharap dapat membawa perubahan positif di bidang energi terbarukan.
+        </p>
+      </div>
 
       <!-- Guru Pembimbing -->
       <div class="mb-12">
@@ -84,9 +99,9 @@
       </div>
 
       <!-- Tim Proyek -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12">
         <!-- Anggota Tim 1 -->
-        <div class="flex flex-col items-center">
+        <div class="team-member flex flex-col items-center">
           <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
             style="background-image: url('images/rosyid.jpg');">
           </div>
@@ -94,7 +109,7 @@
           <p class="text-sm text-gray-200">Project Engineer</p>
         </div>
         <!-- Anggota Tim 2 -->
-        <div class="flex flex-col items-center">
+        <div class="team-member flex flex-col items-center">
           <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom"
             style="background-image: url('images/bagas.jpg');">
           </div>
@@ -102,7 +117,7 @@
           <p class="text-sm text-gray-200">Leader</p>
         </div>
         <!-- Anggota Tim 3 -->
-        <div class="flex flex-col items-center">
+        <div class="team-member flex flex-col items-center">
           <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
             style="background-image: url('images/hisyam.jpg');">
           </div>
@@ -112,9 +127,9 @@
       </div>
 
       <!-- Anggota Tim Row 2 -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 mt-12">
         <!-- Anggota Tim 4 -->
-        <div class="flex flex-col items-center">
+        <div class="team-member flex flex-col items-center">
           <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
             style="background-image: url('images/nisa.jpg');">
           </div>
@@ -122,7 +137,7 @@
           <p class="text-sm text-gray-200">Posisi</p>
         </div>
         <!-- Anggota Tim 5 -->
-        <div class="flex flex-col items-center">
+        <div class="team-member flex flex-col items-center">
           <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
             style="background-image: url('images/fadi.jpg');">
           </div>
@@ -130,7 +145,7 @@
           <p class="text-sm text-gray-200">Web Developer</p>
         </div>
         <!-- Anggota Tim 6 -->
-        <div class="flex flex-col items-center">
+        <div class="team-member flex flex-col items-center">
           <div class="w-40 h-40 rounded-full shadow-xl bg-cover bg-center img-hover-zoom" 
             style="background-image: url('images/mouza.jpg');">
           </div>
