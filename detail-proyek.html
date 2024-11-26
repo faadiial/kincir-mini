@@ -15,6 +15,23 @@
       transform: scale(1.1); /* Slight zoom effect */
     }
 
+    /* Animation for automatic zoom in and out */
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05); /* Zoom in */
+      }
+      100% {
+        transform: scale(1); /* Zoom out */
+      }
+    }
+
+    .animate-zoom {
+      animation: zoom 2s infinite; /* 2 seconds for full cycle, infinite loop */
+    }
+
     /* Card hover effect */
     .card:hover {
       transform: translateY(-10px);
@@ -45,13 +62,13 @@
           Hiyak! hai bertemu dengan saya disini  :3
         </h1>
         <p class="text-lg text-white-700">
-          "Inovasi dimulai dari langkah sederhana. Mari eksplorasi proyek IPAS kami yang sederhana namun penuh makna." anjay skibidi toilet brum brum
+          "Inovasi dimulai dari langkah sederhana. Mari eksplorasi proyek IPAS kami yang sederhana namun penuh makna."
         </p>
       </div>
   
       <!-- Right Illustration -->
       <div class="mt-6 lg:mt-0">
-        <img src="material/ii.png" alt="Kincir Mini" class="w-full img-hover-zoom">
+        <img src="material/ii.png" alt="Kincir Mini" class="w-full img-hover-zoom animate-zoom">
       </div>
     </div>
   </section>
@@ -61,11 +78,7 @@
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold text-blue-800 mb-6">Tentang Proyek Kami</h2>
       <p class="text-lg text-gray-700 leading-relaxed mb-12">
-        KincirMini adalah proyek sederhana yang dirancang untuk mendemonstrasikan prinsip kerja kincir air dalam menghasilkan energi 
-        terbarukan. Dirancang oleh kelompok <span class="font-bold text-blue-800">El Presentasi</span>, proyek ini mencerminkan bahwa
-        langkah kecil dapat membawa dampak besar bagi lingkungan kita.
-      </p>
-
+        KincirMini adalah proyek sederhana yang dirancang untuk mendemonstrasikan prinsip kerja
       <!-- Cards Section -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
@@ -148,12 +161,13 @@
     </div>
   </section>
   
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 mt-20">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2024 Kincir Mini. By Fadi mimisan</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6">
+  <div class="container mx-auto text-center">
+    <p>&copy; 2024 Kincir Mini. Develop by Fadi Alyuliansyah</p>
+  </div>
+</footer>
 
 </body>
 </html>
+
