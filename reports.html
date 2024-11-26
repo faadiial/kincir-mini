@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reports - Kincir Mini</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animation for entering the page */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hover effect for images */
+    .hover-effect {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      transform: scale(1.05);
+    }
+
+    /* Table hover effect */
+    .hover-row:hover {
+      background-color: #e0f7fa; /* Light cyan color */
+      transition: background-color 0.3s;
+    }
+
+    /* Button styles */
+    .btn {
+      @apply bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700 transition;
+    }
+  </style>
 </head>
 <body class="bg-blue-50 font-sans">
 
@@ -21,7 +56,7 @@
   </nav>
 
   <!-- Reports Section -->
-  <section class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-32">
+  <section class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white py-32 fade-in">
     <div class="container mx-auto text-center px-6 md:px-20">
       <h2 class="text-5xl font-extrabold mb-8 leading-tight">
         Our Reports
@@ -29,31 +64,29 @@
       <p class="text-lg md:text-xl mb-10 font-light">
         Berikut adalah laporan rinci dari proyek Kincir Mini, termasuk perencanaan, jadwal, dan evaluasi.
       </p>
+      <a href="#" class="btn">Download Full Report</a> <!-- Button to download report -->
     </div>
   </section>
 
-  <!-- Planning Section -->
-  <section class="container mx-auto py-16 px-6 md:px-20">
+  <!-- Planning Section
+  <section class="container mx-auto py-16 px-6 md:px-20 fade-in">
     <h3 class="text-3xl font-bold text-blue-800 mb-6">Planning / Perencanaan</h3>
     <p class="text-gray-600 mb-4">
-      Timeline proyek dirancang selama 6 bulan dengan pencapaian target di setiap fase untuk memastikan penyelesaian tepat waktu..</p>
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full h-64 md:h-96 flex justify-center items-center">
-      <!-- Masukkan gambar di sini -->
-    <img src="reports/2.jpg
-    " alt="Planning Image" class="w-full h-full object-cover">
-  </div>
-</section>
+      Timeline proyek dirancang selama 6 bulan dengan pencapaian target di setiap fase untuk memastikan penyelesaian tepat waktu.
+    </p>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full h-64 md:h-96 flex justify-center items-center hover-effect">
+      <img src="reports/2.jpg" alt="Planning Image" class="w-full h-full object-cover">
+    </div>
+  </section>
 
-  <!-- Planning Section -->
-  <section class="container mx-auto py-16 px-6 md:px-20">
+  <-- Schedule Section -->
+  <section class="container mx-auto py-16 px-6 md:px-20 fade-in">
     <h3 class="text-3xl font-bold text-blue-800 mb-6">Schedule / Jadwal</h3>
     <p class="text-gray-600 mb-4">Tahap perencanaan proyek mencakup penelitian dan desain yang mendetail untuk memastikan kelayakan dan efektivitas.</p>
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full h-48 md:h-64 flex justify-center items-center">
-        <!-- Masukkan gambar di sini -->
-    <img src="reports/1.jpg
-    " alt="Planning Image" class="w-full h-full object-cover">
-  </div>
-</section>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full h-64 md:h-96 flex justify-center items-center hover-effect">
+      <img src="images/O.jpg" alt="Schedule Image" class="w-full h-full object-cover">
+    </div>
+  </section
 
   <!-- Table of Expenses -->
   <section class="container mx-auto py-12 px-6 md:px-20">
@@ -110,12 +143,12 @@ Setelah proyek selesai, kami mengevaluasi hasilnya untuk mengukur keberhasilan d
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 mt-20">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2024 Kincir Mini. By Fadi mimisan</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6">
+  <div class="container mx-auto text-center">
+    <p>&copy; 2024 Kincir Mini. Develop by Fadi Alyuliansyah</p>
+  </div>
+</footer>
 
 </body>
 </html>
